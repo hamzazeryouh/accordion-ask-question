@@ -1,0 +1,77 @@
+body{
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    background-color: #17093f;
+
+}
+.container{
+    width: 40%;
+    margin: 0 auto;
+    margin-top: 100px;
+}
+.container h2{
+    color: mediumvioletred;
+    position: relative;
+    width: 23 rem;
+}
+.container h2::after{
+    content: "";
+    position: absolute;
+    bottom:0;
+ right: 180px;
+  top:40px;
+    width: 100px;
+    height: 4px;
+   background-color:mediumvioletred;
+}
+.accordion{
+    width: 100%;
+    padding: 0 5px;
+    border: 2px solid #fff;
+    cursor: pointer;
+    border-radius: 50px;
+    display: flex;
+    margin: 6px 0;
+    align-items: center;
+}
+.accordion .icon{
+    margin: 0 10px 0 0;
+    width: 30px;
+    height: 30px;
+    background: url(user4-128x128.jpg) no-repeat 5px  ;
+    border-radius: 50%;
+    float: left;
+   
+    transition: all .5s ease-in;
+
+   
+}
+.accordion h5{
+font-size: 22px;
+margin: 0;
+padding: 5px 0 0 0;
+font-weight: normal;
+color: hsla(0, 5%, 50%, 0.664);
+
+}
+.panel{
+padding:0 15px;
+border-left:2px solid rgb(255, 255, 255);
+margin-left:25px;
+
+font-size: 14px;
+text-align: justify;
+overflow: hidden;
+max-height: 0px;
+transition: all .5s ease-in;
+color: #fff;
+}
+.active .icon{
+    background: url(user4-128x128.jpg) no-repeat 5px -25px darkgray;
+    
+    
+}
+.active{
+    background-color: #d7dddd;
+    color: #fff;
+
+}
